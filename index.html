@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NCTO_FAQs</title>
+<title>RHCCT_FAQs</title>
 <style>
   body {
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: #ffffff;
     font-family: 'Arial', sans-serif;
+    flex-direction: column;
   }
 
   .faq-container {
@@ -70,14 +71,14 @@
     transition: color 0.3s ease;
   }
 
-  .question: hover {
+  .question:hover {
     color: #FDDC21;
   }
 
   .answer {
     display: none;
     margin-bottom: 30px;
-    color: #666;
+    color: #1f1e1e;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -94,7 +95,7 @@
     }
     to {
       opacity: 1;
-      transform: translate(0);
+      transform: translateY(0);
     }
   }
 </style>
@@ -107,12 +108,16 @@
     <a href="https://web.facebook.com/betadoncome" target="_blank">Facebook</a>
     <a href="https://twitter.com/RHCCT25k" target="_blank">Twitter</a>
     <a href="#" target="_blank">Instagram</a>
+    
+ </div>
+</div>
+
+<div style="text-align: center; margin-top: 10px;">
+  <div>
+    <h2>Frequently Asked Questions</h2>
   </div>
 </div>
 
-<div style="text-align: center; margin-top: 20px;">
- <p> <h2>Frequently Asked Questions</h2> </p>
-</div>
 
 <div class="faq-container">
   <div class="faq-content">
@@ -140,9 +145,12 @@
  <div class="question" onclick="toggleAnswer('q8')">Can I benefit without a National Identification Number (NIN)?</div>
     <div class="answer" id="q8">You can NEVER benefit without a NIN or BVN.</div>
 
- <div class="question" onclick="toggleAnswer('q9')">I am a beneficiary of the Household Uplifting Programme HUP-CCT, Will I benefit?</div>
-    <div class="answer" id="q9">You will not benefit from NASSP SU if you have received N10,000 (ten thousand Naira) 18 times during NASSP (HUP-CCT).</div>
+ <div class="question" onclick="toggleAnswer('q9')">I am a beneficiary of Household Uplifting Programme HUP-CCT, Will I benefit?</div>
+    <div class="answer" id="q9">You will not benefit from NASSP SU if you have recieved N10,000 (ten thousand Naira) 18 times during NASSP (HUP-CCT).</div>
 
+    <div class="question" onclick="toggleAnswer('q10')">How can I complain?</div>
+    <div class="answer" id="q10">A grievance redress mechanism is set up at the Community, LGA and SCTU levels to address complaints and pleas emanating from the beneficiaries and community members. Beneficiaries are free to lay (Register) their complaints at any level they are comfortable with. At the community level, the Cash Transfer Facilitators (CTFs) are available to receive your complaints. You may complain about the CTF if not satisfied to the LG GRO, State GRM or call the following lines: 08138021083, 07011312860
+      or  our Toll Free line on MTN 969 to register your complaints.</div>
   </div>
 </div>
 
