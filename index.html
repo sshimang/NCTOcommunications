@@ -18,6 +18,7 @@
   }
 
   .faq-container {
+    font-family: 'Arial', sans-serif;
     max-width: 800px;
     width: 90%;
     margin: 0 auto;
@@ -26,14 +27,16 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 0px;
   }
 
   .banner {
     color: #fff;
-    padding: 5px 0;
+    padding: 0% 0;
     text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 
   .logo {
@@ -122,23 +125,36 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+.scrolling-text {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  animation: scroll 15s linear infinite; /* Define the animation */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+  0% { transform: translateX(100%); } /* Start position */
+  100% { transform: translateX(-100%); } /* End position */
+}
+
 </style>
 </head>
 <body>
-
 <div class="banner">
   <img src="https://scontent.fabv2-2.fna.fbcdn.net/v/t39.30808-1/386252141_706908961464404_2936806290879949661_n.jpg?stp=c13.3.194.194a_dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEtFH62zfHo7frY-tw5PDB79KMZqKLWXcf0oxmootZdxw8v4HAFfb-KsAry6WNF1u9qCcoFImuK4QzPPB1_-SWy&_nc_ohc=4YbJv52kABwAX-TEEyC&_nc_ht=scontent.fabv2-2.fna&oh=00_AfC3VProHFy3ubBmQW3C0DNh7WLQ2VCn0mrgNgKjh_4Dgw&oe=66118EBC" alt="Your Logo">
 </div>
 <div style="text-align: center; margin-top: 1rem;">
-    <h3>Frequently Asked Questions</h3>
+    <h3 style="margin-bottom: 0px; margin-top: 0px; color:#ffcd00">Frequently Asked Questions</h3>
+    <h5 class="scrolling-text">Kindly select a question below to read the response</h5>
 </div>
 <div class="faq-container">
   <div class="faq-content">
     <div class="question" onclick="toggleAnswer('q1')">What is the National Social Safety-nets Project - Scale Up (NASSP-SU) all about? </div>
-    <div class="answer" id="q1">The NASSP-SU is a follow-on operation to the NASSP. It intends to build on and scale up the existing delivery system to provide shock-responsive safety nets and to extend regular social assistance to the poor and vulnerable. </p>The project is designed to offer time-limited cash transfers in response to recent shocks (food price inflation) in rural as well as urban areas. The project will also extend the duration of support to the current beneficiaries of NASSP regular cash transfer program - yet to receive 18 cycles of benefits.</div>
+    <div class="answer" id="q1">The NASSP-SU is a follow-on operation to the NASSP, and intends to build on and scale up the existing delivery system to provide shock responsive safety nets and to extend regular social assistance to the poor and vulnerable. </p>The project is designed to offer time-limited cash transfers in response to recent shocks (food price inflation) in rural as well as urban areas. The project will also extend the duration of support to the current beneficiaries of NASSP regular cash transfer program - yet to receive 18 cycles of benefits.</div>
 
-    <div class="question" onclick="toggleAnswer('q2')">The Project Development Objective?</div>
-    <div class="answer" id="q2">Is to expand coverage of shock-responsive safety net support among the poor and vulnerable and strengthen the national safety net delivery system.</div>
+    <div class="question" onclick="toggleAnswer('q2')">The Project Development Objective is?</div>
+    <div class="answer" id="q2">The broad objective of the project is to expand coverage of shock responsive safety net support among the poor and vulnerable and strengthen the national safety net delivery system.</div>
 
     <div class="question" onclick="toggleAnswer('q3')">Is the programme a palliative?</div>
     <div class="answer" id="q3">No, it is aimed at cushioning the economic hardship being experienced by identified rural and urban households due to the ongoing economic reforms of Government.</div>
@@ -147,19 +163,19 @@ img:hover {
     <div class="answer" id="q4">Beneficiaries of NASSP SU are sourced from the National Social Register targeting poor and vulnerable rural households and the Rapid Response Register targeting poor and vulnerable urban households.</div>
 
  <div class="question" onclick="toggleAnswer('q5')">How do I benefit in this beautiful initiative?</div>
-    <div class="answer" id="q5">Firstly, you must be identified and registered in the National Social Register, Rapid Response Register and other acceptable Registers of poor and vulnerable households in Nigeria. </p>You will then be enrolled with your account details for direct payment to your account.</div>
+    <div class="answer" id="q5">Firstly, you must be identified and registered in the National Social Register, Rapid Response Register and other acceptable Registers of poor and vulnerable households in Nigeria. </p>You will them be enroled with your account details for direct payment to your account.</div>
 
  <div class="question" onclick="toggleAnswer('q6')">How much will I benefit?</div>
     <div class="answer" id="q6">If you are eligible and enrolled, you will benefit N75,000 direct payment to your account i.e. N25,000 per month.</div>
 
  <div class="question" onclick="toggleAnswer('q7')">How long will I benefit?</div>
-    <div class="answer" id="q7">If you are eligible and enrolled, you will benefit from direct payment to your account for three months.</div>
+    <div class="answer" id="q7">If you are eligible and enrolled, you will benefit direct payment to your account for three months.</div>
 
  <div class="question" onclick="toggleAnswer('q8')">Can I benefit without a National Identification Number (NIN)?</div>
     <div class="answer" id="q8">You can NEVER benefit without a NIN or BVN.</div>
 
- <div class="question" onclick="toggleAnswer('q9')">I am a beneficiary of the Household Uplifting Programme HUP-CCT, Will I benefit?</div>
-    <div class="answer" id="q9">You will not benefit from NASSP SU if you have received N10,000 (ten thousand Naira) 18 times during NASSP (HUP-CCT).</div>
+ <div class="question" onclick="toggleAnswer('q9')">I am a beneficiary of Household Uplifting Programme HUP-CCT, Will I benefit?</div>
+    <div class="answer" id="q9">You will not benefit from NASSP SU if you have recieved N10,000 (ten thousand Naira) 18 times during NASSP (HUP-CCT).</div>
 
     <div class="question" onclick="toggleAnswer('q10')">How can I complain?</div>
     <div class="answer" id="q10">A grievance redress mechanism is set up at the Community, LGA and SCTU levels to address complaints and pleas emanating from the beneficiaries and community members. Beneficiaries are free to lay (Register) their complaints at any level they are comfortable with. At the community level, the Cash Transfer Facilitators (CTFs) are available to receive your complaints. You may complain about the CTF if not satisfied to the LG GRO, State GRM or call the following lines: 08138021083, 07011312860
@@ -174,7 +190,7 @@ img:hover {
 
   <div class="social-links">
     <a href="https://web.facebook.com/betadoncome" target="_blank">Facebook</a>
-    <a href="https://twitter.com/RHCCT25k" target="_blank">Twitter</a>
+    <a href="https://twitter.com/RenewedHopeCCT" target="_blank">Twitter</a>
     <a href="#" target="_blank">Instagram</a>
  </div>
 
